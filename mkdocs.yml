@@ -1,0 +1,27 @@
+nav:
+  - Libraries:
+    - pyessv: "libs/pyessv/index.md"
+    - pyesdoc: "libs/pyesdoc/index.md"
+  - Applications:
+    - Doc Explorer: "shells/cordex/index.md"
+    - Doc Search: "shells/main/index.md"
+    - Doc Viewer: "shells/cmip6/index.md"
+    - Dataset Errata: "shells/main/index.md"
+    - Model Comparator: "shells/cordex/index.md"
+  - Web API's:
+    - Main: "shells/main/index.md"
+    - CDF2CIM: "shells/cmip6/index.md"
+    - Dataset Errata: "shells/cordex/index.md"
+  - Shells:
+    - Main: "shells/main/index.md"
+    - CMIP6: "shells/cmip6/index.md"
+    - CORDEX: "shells/cordex/index.md"
+  - Other:
+    - Archives: "shells/main/index.md"
+
+site_name: ES-DOC Technical Documentation
+
+theme:
+    name: material
+    highlightjs: true
+  
