@@ -1,3 +1,5 @@
+dev_addr: !ENV [ESDOC_TECH_DEV_ADDR, 127.0.0.1:8000]
+
 nav:
   - Libraries:
     - pyessv: "libs/pyessv/index.md"
@@ -24,4 +26,3 @@ site_name: ES-DOC Technical Documentation
 theme:
     name: material
     highlightjs: true
-  
