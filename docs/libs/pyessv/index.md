@@ -37,19 +37,67 @@ An item with a vocabulary collection, e.g. piControl
 
 ## Writers
 
-As stated above, ES-DOC vocabularies are dervied from a diverse array of sources.  For each source, e.g. ECMWF, a dedicated pyessv **writer** is allocated the task of mapping the source vocabularies to the pyessv data model, i.e. the task of normalising.  
+As stated above, ES-DOC vocabularies are derived from a diverse array of sources.  For each source, e.g. ECMWF, a dedicated pyessv **writer** is allocated the task of mapping the source vocabularies to the pyessv data model, i.e. the task of normalising.  
 
-The writers are fairly simple python scripts that process a set of input files in various formats, e.g. .ini files.  Each script converts the inputs to the pyessv data model, and subsequently output the results to the pyessv-archive.
+The writers are fairly simple **python scripts** that process a set of input files in various formats, e.g. .ini files.  Each script converts the inputs to the pyessv data model, and subsequently output the results to the pyessv-archive.
+
+## Canonical Names
+
+The pyessv library not only normalises the data model associated with a controlled vocabulary entity, but also normalises the **canonical name** associated with any vocabluary entity.  A pyessv canonical name is without exception **hypen spaced lower case**.  This convention is adopted not only for normalisation purposes but also because it plays well with RESTful URL schemas.
+
+The original input name processed by the writer is stored by pyessv as the **raw_name** field.  Furthermore names that may appear in a user interface are stored as a **label** field.  Thus whilst the canonical name is normalised, both the raw name and label associated with a vocabulary entity is at the **discretion** of the vocabulary authority.
 
 ## Archive
 
-The pyessv-archive holds all vocabularies outputted by the various writers described above.  It is laid out in the following directory structure:
+The pyessv-archive holds all vocabularies outputted by the various writers described above.  It is laid out in the following **directory structure**:
 
-- archive-root/{authority}/{scope}/{collection}
+- archive-root/{authority}/{scope}/{collection}/{term}.json
 
-Each term is a single JSON file written under the collection dicrectory, for example:
+Each term is a **single JSON file** written under the collection dicrectory, for example:
 
 - archive-root/wcrp/cmip6/experiment/picontrol.json
+
+## Web-Service
+
+Whilst all vocabularies are published to the pyessv archive, a web-service API also exists so as to provide programmatic access to the archive.  The web-service is a pseudo **RESTful service** that exposes 3 main endpoints:
+
+**Status**
+
+Current status of the web-service:
+
+- https://pyessv.es-doc.org/status
+
+**Vocabulary Retrieval**
+
+The vocabularies can be retrieved according to the following url pattern:
+
+- https://pyessv.es-doc.org/1/retrieve/{authority}/[{scope}]/[{collection}]/[{term}]
+
+For example, to download all WCRP CMIP6 vocabulary scope:
+
+- https://pyessv.es-doc.org/1/retrieve/wcrp/cmip6
+
+For example, to download ES-DOC errata severity vocabulary collection:
+
+- https://pyessv.es-doc.org/1/retrieve/esdoc/errata/severity
+
+For example, to download Copernicus CORDEX knmi-racmo22e RCM model vocabulary term:
+
+- https://pyessv.es-doc.org/1/retrieve/copernicus/cordex/rcm-model/knmi-racmo22e
+
+**Identifier Validation**
+
+Some projects leveraging pyessv rely upon identifiers based upon patterns of vocabulary terms.  Such identifiers require validation and pyessv thus exposes identifier validation endpoints:
+
+- https://pyessv.es-doc.org/1/validate-identifier
+
+- https://pyessv.es-doc.org/1/validate-identifier-set
+
+## Javascript
+
+User facing front-end applications, such as the ES-DOC explorer, typically need to load pyssv vocabularies into memory at application start-up.  To streamline interacting with the pyessv web-service, a dedicated javascript library has been developed.  
+
+A developer can directly integrate the library into their web-page.  Once integrated, the library exposes to the developer a set of helper functions.  Each function loads a specific set of vocabularies.
 
 ## GitHub Repositories
 
@@ -58,4 +106,8 @@ Each term is a single JSON file written under the collection dicrectory, for exa
 - https://github.com/ES-DOC/pyessv-js
 - https://github.com/ES-DOC/pyessv-writers
 - https://github.com/ES-DOC/pyessv-ws
+
+## Further Info
+
+- https://github.com/ES-DOC/esdoc-docs/outreach/presentations/2018-esgf-f2f/ESGF-F2F-2018-PYESSV.pdf
 
