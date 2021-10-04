@@ -1,0 +1,21 @@
+# ###############################################################
+# STANDARD-SECTION: SETUP
+# ###############################################################
+
+# Set home path
+export ESDOC_TECH_HOME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+export ESDOC_TECH_HOME="$( cd "$( dirname "${ESDOC_TECH_HOME[0]}" )" && pwd )"
+
+# Ensure shell scripts are executable.
+chmod a+x $ESDOC_TECH_HOME/sh/*.sh
+
+# ###############################################################
+# STANDARD-SECTION: ALIASES
+# ###############################################################
+
+# Web-service commands.
+alias esdoc-technical=$ESDOC_TECH_HOME/sh/app_run.sh
+alias esdoc-technical-daemon=$ESDOC_TECH_HOME/sh/daemon_start.sh
+alias esdoc-technical-daemon-stop=$ESDOC_TECH_HOME/sh/daemon_stop.sh
+alias esdoc-technical-daemon-reload=$ESDOC_TECH_HOME/sh/daemon_reload.sh
+alias esdoc-technical-daemon-status=$ESDOC_TECH_HOME/sh/daemon_status.sh
