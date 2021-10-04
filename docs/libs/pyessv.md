@@ -7,13 +7,11 @@ date: 2021-09-21
 some_url: https://example.com
 ---
 
-# ES-DOC Controlled Vocabularies
+# PYESSV: Controlled Vocabularies
 
-The ES-DOC eco-system is built from the ground up upon **controlled vocabularies**.   A controlled vocabulary may be defined as a collection of terms mandated by an authority.  Such authorities include external entities such as the WCRP as well as ES-DOC itself.  
+Processing controlled vocabularies from a diverse set of sources is problematic.  To address this issue the ES-DOC team created a special purpose utility library called **pyessv** (**P**ython **E**arth **S**cience **S**tandard **V**ocabularies).  
 
-Processing vocabularies from a diverse set of sources is problematic.  To address this issue the ES-DOC team created a special purpose utility library called **pyessv** (**P**ython **E**arth **S**cience **S**tandard **V**ocabularies).  
-
-The primary task of pyessv is to **normalise** supported vocabularies.  Once normalised, the vocabularies are published to an archive, and made accessible via a web-service.  
+The primary task of pyessv is to **normalise** supported vocabularies.  Once normalised, the vocabularies are published to an archive and made accessible via a simple web-service API.  
 
 ## Data Model
 
@@ -35,17 +33,17 @@ Group a set of terms by function or meaning, e.g. experiment.
 
 An item with a vocabulary collection, e.g. piControl 
 
+## Canonical Names
+
+The pyessv library not only normalises the data model associated with a controlled vocabulary entity, but also normalises the **canonical name** associated with any vocabluary entity.  A pyessv canonical name is without exception **hypen spaced lower case**.
+
+The original names processed by the writer are still retained by pyessv (as the **raw_name** field).  Furthermore names that may appear in a user interface are stored as a **label** field.  Thus whilst the canonical name is normalised, both the raw name and label associated with a vocabulary entity is retained at the **discretion** of the vocabulary authority.
+
 ## Writers
 
 As stated above, ES-DOC vocabularies are derived from a diverse array of sources.  For each source, e.g. ECMWF, a dedicated pyessv **writer** is allocated the task of mapping the source vocabularies to the pyessv data model, i.e. the task of normalising.  
 
 The writers are fairly simple **python scripts** that process a set of input files in various formats, e.g. .ini files.  Each script converts the inputs to the pyessv data model, and subsequently output the results to the pyessv-archive.
-
-## Canonical Names
-
-The pyessv library not only normalises the data model associated with a controlled vocabulary entity, but also normalises the **canonical name** associated with any vocabluary entity.  A pyessv canonical name is without exception **hypen spaced lower case**.  This convention is adopted not only for normalisation purposes but also because it plays well with RESTful URL schemas.
-
-The original input name processed by the writer is stored by pyessv as the **raw_name** field.  Furthermore names that may appear in a user interface are stored as a **label** field.  Thus whilst the canonical name is normalised, both the raw name and label associated with a vocabulary entity is at the **discretion** of the vocabulary authority.
 
 ## Archive
 

@@ -1,25 +1,25 @@
 dev_addr: !ENV [ESDOC_TECH_DEV_ADDR, 127.0.0.1:8000]
 
 nav:
+  - Foundations: "foundations.md"
+  - Archives: "archives.md"
   - Libraries:
-    - pyessv: "libs/pyessv/index.md"
-    - pyesdoc: "libs/pyesdoc/index.md"
-  - Applications:
-    - Doc Explorer: "shells/cordex/index.md"
-    - Doc Search: "shells/main/index.md"
-    - Doc Viewer: "shells/cmip6/index.md"
-    - Dataset Errata: "shells/main/index.md"
-    - Model Comparator: "shells/cordex/index.md"
-  - Web API's:
-    - Main: "shells/main/index.md"
-    - CDF2CIM: "shells/cmip6/index.md"
-    - Dataset Errata: "shells/cordex/index.md"
-  - Shells:
-    - Main: "shells/main/index.md"
-    - CMIP6: "shells/cmip6/index.md"
-    - CORDEX: "shells/cordex/index.md"
-  - Other:
-    - Archives: "shells/main/index.md"
+    - pyessv: "libs/pyessv.md"
+    - pyesdoc: "libs/pyesdoc.md"
+  - Web Applications:
+    - Comparator: "web/apps/comparator.md"
+    - Errata: "web/apps/errata.md"
+    - Explorer: "web/apps/explorer.md"
+    - Search: "web/apps/search.md"
+    - Specialisations: "web/apps/specialisations.md"
+  - Web Services:
+    - Documentation: "web/services/documentation.md"
+    - CDF2CIM: "web/services/cdf2cim.md"
+    - Dataset Errata: "web/services/errata.md"
+  - Command Line Interfaces:
+    - Main: "shells/main.md"
+    - CMIP6: "shells/cmip6.md"
+    - CORDEX: "shells/cordex.md"
 
 site_name: ES-DOC Technical Documentation
 
