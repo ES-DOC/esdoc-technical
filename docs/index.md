@@ -31,9 +31,3 @@ The CIM schema is defined declaratively via a pythonic **domain specific languag
 For scientists wishing to document their work in a **loosely structured** fashion, The ES-DOC project provides support for so-called specialisations.  On a project by project basis, groups of scientists can come together to declare a **hierarchy of topics** whereby each topic is associated with a fine-grained set of **questions**.  
 
 As with the CIM, specialisations are declared by the community using a pythonic **domain specific language**.  From the definitions are forward engineered assets that are in turn leveraged by upstream tools & applications, e.g. the specialisations web viewer.
-
-## Overview
-
-The ES-DOC technical eco-system revolves around the standardisation of documentation & associated controlled vocabularies.  A dedicated ontology known as the CIM allows the climatological community to describe artefacts such as experiments, models, simulations, datasets, citations ... etc, in a standardised fashion.  The CIM is augmented by controlled vocabularies and so-called specialisations.  Whereas vocabularies serve to constrain terms referred to by documents, specialisations allow the subject matter of documents to be captured in a narrative form by scientists outside of the constraints of the CIM.  
-
-Both the CIM & project specific specialisations are defined in a simplifed fashion using python dictionaries.  From the definitions upstream artefacts are forward engineered to form the basis of a library known as `pyesdoc`.   The vocabularies are also defined in a simplified fashion form the basis of a libary known as `pyessv`.  Taken together, the pyessv & pyesdoc libraries form the core of the ES-DOC eco-system.
