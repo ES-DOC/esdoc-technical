@@ -11,12 +11,12 @@ log()
 			do
 				declare tabs+='\t'
 			done
-	    	echo -e $now" [INFO] :: ESDOC-CDF2CIM-WS :: "$tabs$1
+	    	echo -e $now" [INFO] :: ESDOC-TECH :: "$tabs$1
 	    else
-	    	echo -e $now" [INFO] :: ESDOC-CDF2CIM-WS :: "$1
+	    	echo -e $now" [INFO] :: ESDOC-TECH :: "$1
 	    fi
 	else
-	    echo -e $now" [INFO] :: ESDOC-CDF2CIM-WS :: "
+	    echo -e $now" [INFO] :: ESDOC-TECH :: "
 	fi
 }
 
