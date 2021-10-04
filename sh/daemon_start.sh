@@ -1,19 +1,19 @@
 #!/bin/bash
 
 # Import utils.
-source $CDF2CIM_WS_HOME/sh/utils.sh
+source $ESDOC_TECH_HOME/sh/utils.sh
 
 # Main entry point.
 main()
 {
-	pushd $CDF2CIM_WS_HOME
+	pushd $ESDOC_TECH_HOME
 
-	source $CDF2CIM_WS_HOME/sh/reset_logs.sh
-	supervisord -c $CDF2CIM_WS_HOME/ops/config/supervisord.conf
-	log "initialized web-service daemon"
+	source $ESDOC_TECH_HOME/sh/reset_logs.sh
+	supervisord -c $ESDOC_TECH_HOME/ops/supervisord.conf
+	log "initialized tech-docs daemon"
 
 	sleep 3.0
-	source $CDF2CIM_WS_HOME/sh/daemon_status.sh
+	source $ESDOC_TECH_HOME/sh/daemon_status.sh
 
 	popd
 }

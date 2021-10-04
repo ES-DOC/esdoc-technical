@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Import utils.
-source $CDF2CIM_WS_HOME/sh/utils.sh
+source $ESDOC_TECH_HOME/sh/utils.sh
 
 # Main entry point.
 main()
 {
-	pushd $CDF2CIM_WS_HOME
-	supervisorctl -c $CDF2CIM_WS_HOME/ops/config/supervisord.conf status all
+	pushd $ESDOC_TECH_HOME
+	supervisorctl -c $ESDOC_TECH_HOME/ops/supervisord.conf status all
 	popd
 }
 
