@@ -1,7 +1,6 @@
 dev_addr: !ENV [ESDOC_TECH_DEV_ADDR, 127.0.0.1:8000]
 
 nav:
-  - Foundations: "foundations.md"
   - Archives: "archives.md"
   - Libraries:
     - pyessv: "libs/pyessv.md"
