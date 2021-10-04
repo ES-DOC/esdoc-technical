@@ -1,12 +1,3 @@
----
-title: pyessv
-summary: A brief description of pyessv.
-authors:
-    - Mark A. Conway-Greenslade
-date: 2021-09-21
-some_url: https://example.com
----
-
 # PYESSV: Controlled Vocabularies
 
 Processing controlled vocabularies from a diverse set of sources is problematic.  To address this issue the ES-DOC team created a special purpose utility library called **pyessv** (**P**ython **E**arth **S**cience **S**tandard **V**ocabularies).  

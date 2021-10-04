@@ -1,10 +1,13 @@
 dev_addr: !ENV [ESDOC_TECH_DEV_ADDR, 127.0.0.1:8000]
 
 nav:
-  - Archives: "archives.md"
+  - Schemas:
+    - Ontology: "schemas/ontology.md"
+    - Specialisations: "schemas/specialisations.md"
   - Libraries:
     - pyessv: "libs/pyessv.md"
     - pyesdoc: "libs/pyesdoc.md"
+  - Archives: "archives.md"
   - Web Applications:
     - Comparator: "web/apps/comparator.md"
     - Errata: "web/apps/errata.md"
@@ -19,9 +22,16 @@ nav:
     - Main: "shells/main.md"
     - CMIP6: "shells/cmip6.md"
     - CORDEX: "shells/cordex.md"
+  - Dev Ops:
+    - Overview: "devops/overview.md"
+    - OpalStack: "devops/opalstack.md"
 
 site_name: ES-DOC Technical Documentation
 
 theme:
     name: material
     highlightjs: true
+
+markdown_extensions:
+    - toc:
+        permalink: True

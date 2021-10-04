@@ -1,0 +1,3 @@
+# Documentation Search
+
+- pure javascript

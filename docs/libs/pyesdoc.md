@@ -1,12 +1,3 @@
----
-title: pyesdoc
-summary: A brief description of libraries.
-authors:
-    - Mark A. Conway-Greenslade
-date: 2021-09-21
-some_url: https://example.com
----
-
 # PYESDOC: Document Manager
  
 The CIM ontology combined with project specific specialisations form the backbone of the ES-DOC project.  A pythonic declarative mechanism built upon a domain specific langauge, allows the scientific community to take the **lead role** in defining the documentation requirements.  
