@@ -9,6 +9,10 @@ export ESDOC_TECH_HOME="$( cd "$( dirname "${ESDOC_TECH_HOME[0]}" )" && pwd )"
 # Ensure shell scripts are executable.
 chmod a+x $ESDOC_TECH_HOME/sh/*.sh
 
+# Ensure ops directories exist
+mkdir -p $ESDOC_TECH_HOME/ops/daemon
+mkdir -p $ESDOC_TECH_HOME/ops/logs
+
 # ###############################################################
 # STANDARD-SECTION: ALIASES
 # ###############################################################
