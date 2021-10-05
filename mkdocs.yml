@@ -22,8 +22,8 @@ nav:
     - CDF2CIM: "web/services/cdf2cim.md"
     - Dataset Errata: "web/services/errata.md"
   - Dev Ops:
-    - Overview: "devops/overview.md"
-    - OpalStack: "devops/opalstack.md"
+    - Dashboard: "devops/dashboard.md"
+    - Server: "devops/server.md"
 
 site_name: ES-DOC Technical Documentation
 
