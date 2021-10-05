@@ -6,18 +6,19 @@ A developer wishing to work upon the entire ES-DOC stack needs to install & conf
 
 ## Setup
 
+The installer downloads the entire ES-DOC stack.  Once downloaded one can proceed to setup the tools / services of interest.
+
 ```
 cd YOUR_WORKING_DIRECTORY
 git clone https://github.com/ES-DOC/esdoc-shell.git ./esdoc
 source esdoc/activate
-```
-
-## Stack Installation
-
-The installer downloads the entire ES-DOC stack.  Once downloaded one can proceed to setup the tools / services of interest.
-
-```
 esdoc-stack-install
+```
+
+Once installed it is recommended to add the following to your ~/.bashrc file:
+
+```
+source YOUR_WORKING_DIRECTORY/esdoc/activate
 ```
 
 ## Stack Updating
