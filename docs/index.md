@@ -4,13 +4,14 @@ Welcome to the ES-DOC technical documentation.  This site targets developers & o
 
 ## Overview
 
-The ES-DOC eco-system of tools and services are founded upon 3 pillars:  
+The ES-DOC eco-system of tools and services are founded upon 4 pillars:  
 
 - A set of controlled vocabularies
 - A common ontology
 - A set of specialisations
+- A public archive
 
-Each pillar is associated with a library, tools, applications and/or web-services.  Collectively they form the foundations of the ES-DOC project.
+Each pillar is associated with a library and a set of applications and/or web-services.  Collectively they form the foundations of the ES-DOC project.
 
 ## Controlled Vocabularies
 
@@ -31,3 +32,7 @@ The CIM schema is defined declaratively via a pythonic **domain specific languag
 For scientists wishing to document their work in a **loosely structured** fashion, The ES-DOC project provides support for so-called specialisations.  On a project by project basis, groups of scientists can come together to declare a **hierarchy of topics** whereby each topic is associated with a fine-grained set of **questions**.  
 
 As with the CIM, specialisations are declared by the community using a pythonic **domain specific language**.  From the definitions are forward engineered assets that are in turn leveraged by upstream tools & applications, e.g. the specialisations web viewer.
+
+## Archives
+
+Ultimately the ES-DOC eco-system serves to facilitate the creation of CIM compliant documentation.  Once created they may be [archived](https://github.com/ES-DOC/esdoc-archive) thereby being eligible for processing by upstream applications such as search engines & documentation viewers.
