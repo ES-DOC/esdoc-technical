@@ -208,3 +208,16 @@ Emits a bash file containing CMIP6 controlled vocabularis pulled from pyessv.
 **cmip6-machines-init-xls**
 
 Initialises set of machine & performs spreadsheets from a template.  
+
+## GitHub Repositories
+
+- https://github.com/ES-DOC/cmip6
+- https://github.com/ES-DOC/cmip6-specializations-aerosol
+- https://github.com/ES-DOC/cmip6-specializations-atmos
+- https://github.com/ES-DOC/cmip6-specializations-atmoschem
+- https://github.com/ES-DOC/cmip6-specializations-land
+- https://github.com/ES-DOC/cmip6-specializations-landice
+- https://github.com/ES-DOC/cmip6-specializations-ocean
+- https://github.com/ES-DOC/cmip6-specializations-ocnbgchem
+- https://github.com/ES-DOC/cmip6-specializations-seaice
+- https://github.com/ES-DOC/cmip6-specializations-toplevel

@@ -134,3 +134,11 @@ Iterates set of specialisation repos & synchronizes repo tooling.
 **cordex-specializations-validate**
 
 Iterates set of specialisations & emits a validation report for each one.
+
+## GitHub Repositories
+
+- https://github.com/ES-DOC/cordex
+- https://github.com/ES-DOC/cordex-specializations-aerosol
+- https://github.com/ES-DOC/cordex-specializations-atmos
+- https://github.com/ES-DOC/cordex-specializations-land
+- https://github.com/ES-DOC/cordex-specializations-toplevel
