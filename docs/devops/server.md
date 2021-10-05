@@ -2,17 +2,60 @@
 
 ## Overview
 
-The Opalstack TEST server
+The ES-DOC web-services & applications are deployed upon servers provided by a company called [Opalstack](https://opalstack.com/).  Two servers have been provisioned with an identical setup.  Server one acts as a TEST environment, whilst server two acts as a PROD environment.
 
-## Addresses
+## SSH Connection
 
-- TEST :: 
+### TEST Server 
 
-- PROD :: 
+```
+alias esdoc-ssh-opal-test='ssh esdoc@vps149.opalstack.com'
+```
 
+### PROD Server 
 
-## Directory Layout
+```
+alias esdoc-ssh-opal-prod='ssh esdoc@vps184.opalstack.com'
+```
 
+## Directory Structure Overview
+
+The directory layout upon each server is identical other than the environment type prefix (expressed below as ENV).  The **apps** are installed via the OpalStack dashboard.  
+
+```
+- apps
+    - directories are installed from within OpalStack dashboard
+    - directories are underscore lower cased
+    - directories are prefixed with environment type
+
+- archives
+    - contains canonical documents & vocabularies
+    - each directory maps to a cloned GitHub repo
+
+- devops
+    - various scripts for manipulating server
+
+- libs
+    - each directory maps to a cloned GitHub repo
+    - most libs are mapped to an app but some are standalone
+    - python virtual envs created using pyenv + pipenv
+
+- logs
+    - apps
+    - sites
+
+- rewriters
+    - documentation : routes https://documentation.es-doc.org URLs to relevant app
+    - further-info : routes https://further-info.es-doc.org URLs to relevant app
+    - specializations : routes https://specializations.es-doc.org URLs to relevant app
+
+- tmp
+    - temporary directory regularly cleared
+```
+
+## Directory Structure 
+
+```
 - apps
     - {ENV}_fe_comparator_1
     - {ENV}_test_fe_explore_1
@@ -60,3 +103,4 @@ The Opalstack TEST server
     - specializations
 
 - tmp
+```
