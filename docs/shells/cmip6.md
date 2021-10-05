@@ -1,10 +1,25 @@
 # CMIP6 Shell Application
 
-The CMIP6 shell is a command line interface for interacting specifically with the ES-DOC CMIP6 documentation eco-system.
+The CMIP6 shell is a command line interface for interacting specifically with the ES-DOC CMIP6 documentation eco-system.  Once installed one can manage the full set of CMIP6 documentation. 
 
-**cmip6-setup**
+## Installation
 
-Sets up shell for use.  Builds assets such as directories, archives, institutional repos, required libraries & specializations.
+```
+cd YOUR_WORKING_DIRECTORY
+git clone https://github.com/ES-DOC/cmip6.git
+source cmip6/activate
+cmip6-setup
+```
+
+Once installed it is recommended to add the following to your ~/.bashrc file:
+
+```
+source YOUR_WORKING_DIRECTORY/cmip6/activate
+```
+
+## Commands
+
+Activiating the cmip6 shell exposes a wide set of commands to streamline various operations.  Each command is documented below.
 
 ## Citations
 
