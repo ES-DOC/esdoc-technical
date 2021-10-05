@@ -143,7 +143,6 @@ Deletes previously generated JSON files in readiness for regeneration.
 
 ## Parties
 
-
 **cmip6-parties-init-xls**
 
 Initialises set of responsible party spreadsheets from a template.  One spreadsheet per institute is created.
