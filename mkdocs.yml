@@ -1,26 +1,33 @@
 dev_addr: !ENV [ESDOC_TECH_DEV_ADDR, 127.0.0.1:8000]
 
 nav:
+  - Home: "index.md"
+
   - Core Schemas:
     - CIM Ontology: "schemas/ontology.md"
     - Specialisations: "schemas/specialisations.md"
+
   - Core Libraries:
     - pyessv: "libs/pyessv.md"
     - pyesdoc: "libs/pyesdoc.md"
+
   - CLI Applications:
     - Main: "shells/main.md"
     - CMIP6: "shells/cmip6.md"
     - CORDEX: "shells/cordex.md"
+
   - Web Applications:
     - Comparator: "web/apps/comparator.md"
     - Dataset Errata: "https://es-doc.github.io/esdoc-errata-client"
     - Explorer: "web/apps/explorer.md"
     - Search: "web/apps/search.md"
     - Specialisations: "web/apps/specialisations.md"
+
   - Web Services:
     - CDF2CIM: "web/services/cdf2cim.md"
     - Dataset Errata: "https://es-doc.github.io/esdoc-errata-client"
     - Documentation: "web/services/documentation.md"
+
   - Dev Ops:
     - Dashboard: "devops/dashboard.md"
     - Server: "devops/server.md"
@@ -30,6 +37,8 @@ site_name: ES-DOC Technical Documentation
 theme:
     name: material
     highlightjs: true
+    feature:
+        - navigation.tabs
 
 markdown_extensions:
     - toc:
