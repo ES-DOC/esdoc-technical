@@ -13,14 +13,14 @@ nav:
     - CORDEX: "shells/cordex.md"
   - Web Applications:
     - Comparator: "web/apps/comparator.md"
-    - Errata: "web/apps/errata.md"
+    - Dataset Errata: "https://es-doc.github.io/esdoc-errata-client"
     - Explorer: "web/apps/explorer.md"
     - Search: "web/apps/search.md"
     - Specialisations: "web/apps/specialisations.md"
   - Web Services:
-    - Documentation: "web/services/documentation.md"
     - CDF2CIM: "web/services/cdf2cim.md"
-    - Dataset Errata: "web/services/errata.md"
+    - Dataset Errata: "https://es-doc.github.io/esdoc-errata-client"
+    - Documentation: "web/services/documentation.md"
   - Dev Ops:
     - Dashboard: "devops/dashboard.md"
     - Server: "devops/server.md"
