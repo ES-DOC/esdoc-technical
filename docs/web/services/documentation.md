@@ -128,19 +128,21 @@ The indexation process scans all archived CIM documents and populates a simple P
 
 ## Command Line Interface
 
-The ES-DOC documentation web-service supports a command line interface to streamline operations.  
+The web-service supports a command line interface to streamline operations.
+
+### Activation
+
+Place the following in one's `~/.bashrc` file:
+
+```
+source INSTALL_DIR/sh/activate
+```
 
 ### Installation
 
 **esdoc-ws-install**
 
-Installs & configures application.  Virtual environment is created using pipenv.  3 configuration files will be placed in `INSTALL_DIR/ops/config` sub-folder:
-
-- pyesdoc.conf 
-
-- supervisor.conf 
-
-- ws.conf 
+Installs & configures application.  Virtual environment is created using pipenv.  3 configuration files will be placed in `INSTALL_DIR/ops/config` sub-folder.
 
 **esdoc-ws-update**
 
@@ -214,9 +216,13 @@ Uninstalls database.
 
 Compresses on-disk size of database by optimising indexes.
 
-## Virtual Environment Setup
+## Virtual Environment
+
+### Pre-requisite
 
 It is assumed that the machine upon which the application will run has `pyenv` pre-installed.  
+
+### Setup
 
 ```
 cd INSTALL_DIR
@@ -225,4 +231,45 @@ pip install --upgrade pip
 pip install --upgrade pipenv
 pipenv shell
 pip install -r ./requirements.txt
+```
+
+## Configuration
+
+Once installed the following files will be in the `INSTALL_DIR/ops/config` folder:
+
+### Files
+
+**pyesdoc.conf** 
+
+    - configures pyesdoc library
+    - permits archive directory to be defined
+
+**supervisor.conf** 
+
+    - configures daemon process
+    - no need to touch generally speaking
+
+**ws.conf** 
+
+    - configures application process
+    - database, mode & port are primary settings
+
+### Example
+
+**ws.conf** 
+
+```
+{
+    "cookie_secret": "p2FdFgrUN3vcc",
+    "db": "postgresql://esdoc_api_db_admin@localhost:5432/esdoc_api",
+    "host": "localhost",
+    "network_state": "up",
+    "mode": "dev",
+    "port": 5000,
+    "ingestion": {
+        "parallelize": false,
+        "projects": "cmkip6",
+        "throttle": 0
+    }
+}
 ```
