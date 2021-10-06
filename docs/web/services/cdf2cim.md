@@ -10,27 +10,27 @@ Once archived the cdf2cim metadata is indexed by the [cdf2cim-indexer](https://g
 
 ## Endpoints
 
-- https://cdf2cim.es-doc.org/1/verify
+**https://cdf2cim.es-doc.org/1/verify**
 
-    - Verifies whether a metadata file has been received or not
     - HTTP GET
+    - Verifies whether a metadata file has been received or not
     - param: `hashid` = identifier or a cdf2cim metadata  file
 
-- https://cdf2cim.es-doc.org/1/verify-authorization
+**https://cdf2cim.es-doc.org/1/verify-authorization**
 
-    - Verifies whether a GitHub user is authorized to publish
     - HTTP GET
+    - Verifies whether a GitHub user is authorized to publish
     - param: `login` = a GitHub username
     - param: `token` = a GitHub access token
 
-- https://cdf2cim.es-doc.org/1/cmip5
+**https://cdf2cim.es-doc.org/1/cmip5**
 
-    - CMIP5 cdf2cim metadata publishing
     - HTTP POST
+    - CMIP5 cdf2cim metadata publishing
     - JSON payload is validated against a [json schema](https://github.com/ES-DOC/esdoc-cdf2cim-ws/blob/master/cdf2cim_ws/schemas/body/1.cmip5.json)
 
-- https://cdf2cim.es-doc.org/1/cmip6
+**https://cdf2cim.es-doc.org/1/cmip6**
 
-    - CMIP6 cdf2cim metadata publishing
     - HTTP POST
+    - CMIP6 cdf2cim metadata publishing
     - JSON payload is validated against a [json schema](https://github.com/ES-DOC/esdoc-cdf2cim-ws/blob/master/cdf2cim_ws/schemas/body/1.cmip6.json)
