@@ -24,19 +24,19 @@ The directory layout upon each server is identical other than the environment ty
 
 ```
 - apps
-    - directories are installed from within OpalStack dashboard
-    - directories are underscore lower cased
+    - directories installed by OpalStack
+    - naming convention = underscore lower cased
     - directories are prefixed with environment type
 
 - archives
     - contains canonical documents & vocabularies
-    - each directory maps to a cloned GitHub repo
+    - each directory is mapped to a cloned GitHub repo
 
 - devops
     - various scripts for manipulating server
 
 - libs
-    - each directory maps to a cloned GitHub repo
+    - each directory is mapped to a cloned GitHub repo
     - most libs are mapped to an app but some are standalone
     - python virtual envs created using pyenv + pipenv
 
@@ -45,9 +45,9 @@ The directory layout upon each server is identical other than the environment ty
     - sites
 
 - rewriters
-    - documentation : routes https://documentation.es-doc.org URLs to relevant app
-    - further-info : routes https://further-info.es-doc.org URLs to relevant app
-    - specializations : routes https://specializations.es-doc.org URLs to relevant app
+    - documentation : routes https://documentation.es-doc.org URLs
+    - further-info : routes https://further-info.es-doc.org URLs
+    - specializations : routes https://specializations.es-doc.org URLs
 
 - tmp
     - temporary directory regularly cleared
