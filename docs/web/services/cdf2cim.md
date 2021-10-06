@@ -10,6 +10,18 @@ Once archived the cdf2cim metadata is indexed by the [cdf2cim-indexer](https://g
 
 ## Endpoints
 
+**https://cdf2cim.es-doc.org/1/cmip5**
+
+    - HTTP POST
+    - CMIP5 cdf2cim metadata publishing
+    - JSON payload is validated against a [json schema](https://github.com/ES-DOC/esdoc-cdf2cim-ws/blob/master/cdf2cim_ws/schemas/body/1.cmip5.json)
+
+**https://cdf2cim.es-doc.org/1/cmip6**
+
+    - HTTP POST
+    - CMIP6 cdf2cim metadata publishing
+    - JSON payload is validated against a [json schema](https://github.com/ES-DOC/esdoc-cdf2cim-ws/blob/master/cdf2cim_ws/schemas/body/1.cmip6.json)
+
 **https://cdf2cim.es-doc.org/1/verify**
 
     - HTTP GET
@@ -22,15 +34,3 @@ Once archived the cdf2cim metadata is indexed by the [cdf2cim-indexer](https://g
     - Verifies whether a GitHub user is authorized to publish
     - param: `login` = a GitHub username
     - param: `token` = a GitHub access token
-
-**https://cdf2cim.es-doc.org/1/cmip5**
-
-    - HTTP POST
-    - CMIP5 cdf2cim metadata publishing
-    - JSON payload is validated against a [json schema](https://github.com/ES-DOC/esdoc-cdf2cim-ws/blob/master/cdf2cim_ws/schemas/body/1.cmip5.json)
-
-**https://cdf2cim.es-doc.org/1/cmip6**
-
-    - HTTP POST
-    - CMIP6 cdf2cim metadata publishing
-    - JSON payload is validated against a [json schema](https://github.com/ES-DOC/esdoc-cdf2cim-ws/blob/master/cdf2cim_ws/schemas/body/1.cmip6.json)

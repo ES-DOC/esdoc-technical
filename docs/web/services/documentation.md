@@ -128,6 +128,101 @@ The indexation process scans all archived CIM documents and populates a simple P
 
 ## Command Line Interface
 
+The ES-DOC documentation web-service supports a command line interface to streamline operations.  
 
-## Virtual Environment
+### Installation
 
+**esdoc-ws-install**
+
+Installs & configures application.  Virtual environment is created using pipenv.  3 configuration files will be placed in `INSTALL_DIR/ops/config` sub-folder:
+
+- pyesdoc.conf 
+
+- supervisor.conf 
+
+- ws.conf 
+
+**esdoc-ws-update**
+
+Updates application code & associated virtual environment. 
+
+### Process Control
+
+**esdoc-ws**
+
+Runs application in classic mode.
+
+**esdoc-ws-daemon**
+
+Runs application in daemon mode.  The daemonised process is managed by supervisord.
+
+**esdoc-ws-daemon-reload**
+
+Reloads application whilst in daemon mode.  This will apply any configuration changes.
+
+**esdoc-ws-daemon-status**
+
+Emits to stdout application process status.
+
+**esdoc-ws-daemon-stop**
+
+Stops application whilst in daemon mode. 
+
+**esdoc-ws-reset-logs**
+
+Resets application logs - found in `INSTALL_DIR/ops/logs`. 
+
+### Database Management
+
+**esdoc-ws-db-backup**
+
+Creates a local backup of database -> `INSTALL_DIR/resources/db`.
+
+**esdoc-ws-db-flush**
+
+Removes from database documents by project & source. 
+
+**esdoc-ws-db-ingest**
+
+Read ingestion settings from ws.conf, scans documentation archive & ingests scanned documents into database. 
+
+**esdoc-ws-db-install**
+
+Installs database in a localised development environment.
+
+**esdoc-ws-db-reset**
+
+Uninstalls then reinstalls database.
+
+**esdoc-ws-db-restore**
+
+Restores database from a backup file using `psql`.
+
+**esdoc-ws-db-setup**
+
+Initialises database schema & tables.
+
+**esdoc-ws-db-truncate**
+
+Prunes on-disk database pages.
+
+**esdoc-ws-db-uninstall**
+
+Uninstalls database.
+
+**esdoc-ws-db-vacuum**
+
+Compresses on-disk size of database by optimising indexes.
+
+## Virtual Environment Setup
+
+It is assumed that the machine upon which the application will run has `pyenv` pre-installed.  
+
+```
+cd INSTALL_DIR
+pyenv local 2.7.18
+pip install --upgrade pip
+pip install --upgrade pipenv
+pipenv shell
+pip install -r ./requirements.txt
+```
