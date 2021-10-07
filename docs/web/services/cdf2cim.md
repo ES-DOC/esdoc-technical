@@ -10,6 +10,11 @@ Once archived the cdf2cim metadata is indexed by the [cdf2cim-indexer](https://g
 
 ## Endpoints
 
+**https://cdf2cim.es-doc.org**
+
+    - HTTP GET
+    - Returns web-service operational status
+
 **https://cdf2cim.es-doc.org/1/cmip5**
 
     - HTTP POST

@@ -27,6 +27,7 @@ nav:
     - CDF2CIM: "web/services/cdf2cim.md"
     - Dataset Errata: "https://es-doc.github.io/esdoc-errata-client"
     - Documentation: "web/services/documentation.md"
+    - PYESSV: "web/services/pyessv.md"
 
   - Dev Ops:
     - Dashboard: "devops/dashboard.md"
