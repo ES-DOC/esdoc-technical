@@ -37,7 +37,7 @@ nav:
   - Dev Ops:
     - Dashboard: "devops/dashboard.md"
     - Server: "devops/server.md"
-    - Troubleshooting: "devops/Troubleshooting.md"
+    - Troubleshooting: "devops/troubleshooting.md"
 
 site_name: ES-DOC Technical Documentation
 

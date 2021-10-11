@@ -27,7 +27,9 @@ The explorer is a pure javascript web application built using the [Vue JS](https
 
 ## Technical Notes
 
-- The explorer pulls data from both the vocabulary & documentation backend web-services
+- The explorer consumes data from both the vocabulary & documentation backend web-services
+
+- Some data is packaged as static files - they may be found within the `INSTALL_DIR/src/static` sub-folder
 
 - The various views are simple wrappers around so-called sub-explorers:
 
@@ -40,6 +42,10 @@ The explorer is a pure javascript web application built using the [Vue JS](https
 - The explorer can render a wide set of CIM v2 documents
 
 - The explorer exposes clean URLs such as https://explore.es-doc.org/cmip6/models
+
+- All components within the `INSTALL_DIR/src/components` sub-folder are prefixed with `The` if the component is deemed a singleton
+
+- VueJS standards and conventions are adopted as much as possible
 
 ## GitHub Repository
 
