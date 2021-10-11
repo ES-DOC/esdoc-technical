@@ -1,4 +1,4 @@
-# Documentation Web Service
+# Documentation Web Service API
 
 ## Overview
 

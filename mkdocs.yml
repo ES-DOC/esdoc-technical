@@ -8,31 +8,31 @@ nav:
     - Specialisations: "schemas/specialisations.md"
 
   - Libraries:
-    - pyessv: "libs/pyessv.md"
-    - pyesdoc: "libs/pyesdoc.md"
+    - PYESSV: "libs/pyessv.md"
+    - PYESDOC: "libs/pyesdoc.md"
 
   - Archives:
     - CDF2CIM: "archives/cdf2cim.md"
     - Documentation: "archives/documentation.md"
     - PYESSV: "archives/pyessv.md"
 
-  - CLI Applications:
+  - CLI Apps:
     - Main: "shells/main.md"
     - CMIP6: "shells/cmip6.md"
     - CORDEX: "shells/cordex.md"
 
-  - Web Applications:
-    - Comparator: "web/apps/comparator.md"
+  - Front Ends:
+    - Comparator: "front-ends/comparator.md"
     - Dataset Errata: "https://es-doc.github.io/esdoc-errata-client"
-    - Explorer: "web/apps/explorer.md"
-    - Search: "web/apps/search.md"
-    - Specialisations: "web/apps/specialisations.md"
+    - Explorer: "front-ends/explorer.md"
+    - Search: "front-ends/search.md"
+    - Specialisations: "front-ends/specialisations.md"
 
-  - Web Services:
-    - CDF2CIM: "web/services/cdf2cim.md"
+  - Web APIs:
+    - CDF2CIM: "web-apis/cdf2cim.md"
     - Dataset Errata: "https://es-doc.github.io/esdoc-errata-client"
-    - Documentation: "web/services/documentation.md"
-    - PYESSV: "web/services/pyessv.md"
+    - Documentation: "web-apis/documentation.md"
+    - PYESSV: "web-apis/pyessv.md"
 
   - Dev Ops:
     - Dashboard: "devops/dashboard.md"
