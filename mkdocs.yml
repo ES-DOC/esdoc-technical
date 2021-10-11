@@ -18,13 +18,13 @@ nav:
 
   - Web APIs:
     - CDF2CIM: "web-apis/cdf2cim.md"
-    - Dataset Errata: "https://es-doc.github.io/esdoc-errata-client"
     - Documentation: "web-apis/documentation.md"
+    - Errata: "https://es-doc.github.io/esdoc-errata-client"
     - PYESSV: "web-apis/pyessv.md"
 
   - Web Front Ends:
     - Comparator: "front-ends/comparator.md"
-    - Dataset Errata: "https://es-doc.github.io/esdoc-errata-client"
+    - Errata: "https://es-doc.github.io/esdoc-errata-client"
     - Explorer: "front-ends/explorer.md"
     - Search: "front-ends/search.md"
     - Specialisations: "front-ends/specialisations.md"
@@ -35,7 +35,6 @@ nav:
     - CORDEX: "shells/cordex.md"
 
   - Dev Ops:
-    - Dashboard: "devops/dashboard.md"
     - Servers: "devops/servers.md"
     - Troubleshooting: "devops/troubleshooting.md"
 

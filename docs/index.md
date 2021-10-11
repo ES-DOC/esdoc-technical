@@ -35,4 +35,16 @@ As with the CIM, specialisations are declared by the community using a pythonic 
 
 ## Archives
 
-Ultimately the ES-DOC eco-system serves to facilitate the creation of CIM compliant documentation.  Once created they may be [archived](https://github.com/ES-DOC/esdoc-archive) thereby being eligible for processing by upstream applications such as search engines & documentation viewers.
+Ultimately the ES-DOC eco-system serves to facilitate the creation of CIM compliant documentation.  Once created they may be [archived](https://github.com/ES-DOC/esdoc-archive) thereby being eligible for processing by upstream applications such as search engines & documentation viewers.  
+
+## Libraries
+
+Two core standalone python libraries, pyessv & pyesdoc, underpin ES-DOC the upstream tooling chain.  They are at the core of the entire tooling eco-system.
+
+## Web APIs
+
+Open web APIs have been built using both the libraries & archives.  The APIs are consumed from both front-end and command line applications. 
+
+## Front Ends
+
+Several user facing front end applications are available to end users.  They are constructed using javascript & CSS frameworks.  They consume data pulled from the web API's.
