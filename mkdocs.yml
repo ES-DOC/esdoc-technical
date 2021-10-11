@@ -3,13 +3,18 @@ dev_addr: !ENV [ESDOC_TECH_DEV_ADDR, 127.0.0.1:8000]
 nav:
   - Home: "index.md"
 
-  - Core Schemas:
+  - Schemas:
     - CIM Ontology: "schemas/ontology.md"
     - Specialisations: "schemas/specialisations.md"
 
-  - Core Libraries:
+  - Libraries:
     - pyessv: "libs/pyessv.md"
     - pyesdoc: "libs/pyesdoc.md"
+
+  - Archives:
+    - CDF2CIM: "archives/cdf2cim.md"
+    - Documentation: "archives/documentation.md"
+    - PYESSV: "archives/pyessv.md"
 
   - CLI Applications:
     - Main: "shells/main.md"
@@ -32,6 +37,7 @@ nav:
   - Dev Ops:
     - Dashboard: "devops/dashboard.md"
     - Server: "devops/server.md"
+    - Troubleshooting: "devops/Troubleshooting.md"
 
 site_name: ES-DOC Technical Documentation
 

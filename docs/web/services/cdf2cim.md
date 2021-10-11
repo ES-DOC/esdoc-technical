@@ -8,6 +8,14 @@ The cdf2cim-client maps each NetCDF file to a simplified JSON metadata file and 
 
 Once archived the cdf2cim metadata is indexed by the [cdf2cim-indexer](https://github.com/ES-DOC/esdoc-cdf2cim-indexer).  The indexer is essentially a distributed map reduce job the output of which is a set of CIM simulation documents.
 
+## Pre-requisites
+
+1.  The [cdf2cim-archive](https://github.com/ES-DOC/esdoc-cdf2cim-archive) repository has been installed upon the machine.
+
+2.  The **CDF2CIM_ARCHIVE_HOME** environment variable has been set.
+
+3.  The [pyenv](https://github.com/pyenv/pyenv) library has been installed upon the machine.  
+
 ## Endpoints
 
 **https://cdf2cim.es-doc.org**
@@ -95,11 +103,7 @@ Resets application logs - found in `INSTALL_DIR/ops/logs`.
 
 ## Virtual Environment
 
-### Pre-requisite
-
-It is assumed that the machine upon which the application will run has `pyenv` pre-installed.  
-
-### Setup
+To setup:
 
 ```
 cd INSTALL_DIR

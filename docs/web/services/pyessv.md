@@ -4,6 +4,14 @@
 
 The pyessv web-service exposes a set of endpoints for exposing controlled vocabularies to upstream tools & applications.  It runs over the top of an in-momory cached instance of the pyessv-archive.  It serves vocabularies in JSON format on demand.
 
+## Pre-requisites
+
+1.  The [pyessv-archive](https://github.com/ES-DOC/pyessv-archive) repository has been installed upon the machine.
+
+2.  The **PYESSV_ARCHIVE_HOME** environment variable has been set.
+
+3.  The [pyenv](https://github.com/pyenv/pyenv) library has been installed upon the machine.  
+
 ## Endpoints
 
 **https://pyessv.es-doc.org**
@@ -83,11 +91,7 @@ Resets application logs - found in `INSTALL_DIR/ops/logs`.
 
 ## Virtual Environment
 
-### Pre-requisite
-
-It is assumed that the machine upon which the application will run has `pyenv` pre-installed.  
-
-### Setup
+To setup: 
 
 ```
 cd INSTALL_DIR

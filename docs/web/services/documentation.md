@@ -4,6 +4,12 @@
 
 The ES-DOC documentation web-service is built upon an indexed database of all CIM documents published to the ES-DOC archive.  It exposes documentation search & publication endpoints.
 
+## Pre-requisites
+
+1.  The [pyenv](https://github.com/pyenv/pyenv) library has been installed upon the machine.  
+
+2.  PostgreSQL database server is running - preferably most recent version.
+
 ## Database
 
 The indexation process scans all archived CIM documents and populates a simple PostgreSQL database using the well-known [SQLAlchemy](https://www.sqlalchemy.org/) ORM libary.  The database consists of 4 tables:
@@ -218,11 +224,7 @@ Compresses on-disk size of database by optimising indexes.
 
 ## Virtual Environment
 
-### Pre-requisite
-
-It is assumed that the machine upon which the application will run has `pyenv` pre-installed.  
-
-### Setup
+To setup: 
 
 ```
 cd INSTALL_DIR
