@@ -16,27 +16,27 @@ nav:
     - Documentation: "archives/documentation.md"
     - PYESSV: "archives/pyessv.md"
 
-  - CLI Apps:
-    - Main: "shells/main.md"
-    - CMIP6: "shells/cmip6.md"
-    - CORDEX: "shells/cordex.md"
-
-  - Front Ends:
-    - Comparator: "front-ends/comparator.md"
-    - Dataset Errata: "https://es-doc.github.io/esdoc-errata-client"
-    - Explorer: "front-ends/explorer.md"
-    - Search: "front-ends/search.md"
-    - Specialisations: "front-ends/specialisations.md"
-
   - Web APIs:
     - CDF2CIM: "web-apis/cdf2cim.md"
     - Dataset Errata: "https://es-doc.github.io/esdoc-errata-client"
     - Documentation: "web-apis/documentation.md"
     - PYESSV: "web-apis/pyessv.md"
 
+  - Web Front Ends:
+    - Comparator: "front-ends/comparator.md"
+    - Dataset Errata: "https://es-doc.github.io/esdoc-errata-client"
+    - Explorer: "front-ends/explorer.md"
+    - Search: "front-ends/search.md"
+    - Specialisations: "front-ends/specialisations.md"
+
+  - CLI Apps:
+    - Main: "shells/main.md"
+    - CMIP6: "shells/cmip6.md"
+    - CORDEX: "shells/cordex.md"
+
   - Dev Ops:
     - Dashboard: "devops/dashboard.md"
-    - Server: "devops/server.md"
+    - Servers: "devops/servers.md"
     - Troubleshooting: "devops/troubleshooting.md"
 
 site_name: ES-DOC Technical Documentation
