@@ -6,21 +6,19 @@ The ES-DOC web-services & applications are deployed upon servers provided by a c
 
 ## SSH Connection
 
-### TEST Server 
-
 ```
+# TEST Server 
 alias esdoc-ssh-opal-test='ssh esdoc@vps149.opalstack.com'
-```
 
-### PROD Server 
-
-```
+# PROD Server 
 alias esdoc-ssh-opal-prod='ssh esdoc@vps184.opalstack.com'
 ```
 
-## Directory Structure Overview
+## File System
 
-The directory layout upon each server is identical other than the environment type prefix (expressed below as ENV).  The **apps** are installed via the OpalStack dashboard.  
+### Layout
+
+The file system layout upon each server is identical other than the environment type prefix (expressed below as ENV).  The **apps** are installed via the OpalStack dashboard.  
 
 ```
 - apps
@@ -53,7 +51,7 @@ The directory layout upon each server is identical other than the environment ty
     - temporary directory regularly cleared
 ```
 
-## Directory Structure 
+### Directory Structure 
 
 ```
 - apps
@@ -104,3 +102,114 @@ The directory layout upon each server is identical other than the environment ty
 
 - tmp
 ```
+
+## Logs
+
+### Application Logs
+
+The supervisor process control system routes logging events to log files contained within a service's `ops/logs` sub-folder.  The log files are rotated once they exceed a 50MB size limit.
+
+```
+# Documentation Web API
+~/libs/esdoc-api/ops/logs/stderr-ws.log
+~/libs/esdoc-api/ops/logs/stdout-ws.log
+
+# CDF2CIM Web API
+~/libs/esdoc-cdf2cim-ws/ops/logs/stderr-ws.log
+~/libs/esdoc-cdf2cim-ws/ops/logs/stdout-ws.log
+
+# Errata Web API
+~/libs/esdoc-errata-ws/ops/logs/stderr-ws.log
+~/libs/esdoc-errata-ws/ops/logs/stdout-ws.log
+
+# PYESSV Web API
+~/libs/pyessv-ws/ops/logs/stderr-ws.log
+~/libs/pyessv-ws/ops/logs/stdout-ws.log
+
+# Documentation URL Rewriter
+~/rewriters/documentation/ops/logs/stderr-ws.log
+~/rewriters/documentation/ops/logs/stdout-ws.log
+
+# Further Info URL Rewriter
+~/rewriters/further-info/ops/logs/stderr-ws.log
+~/rewriters/further-info/ops/logs/stdout-ws.log
+
+# Specializations URL Rewriter
+~/rewriters/specializations/ops/logs/stderr-ws.log
+~/rewriters/specializations/ops/logs/stdout-ws.log
+```
+
+### Process Logs
+
+Supervisor process control logs are also written to a service's `ops/logs` sub-folder.
+
+```
+# Documentation Web API
+~/libs/esdoc-api/ops/logs/supervisord.log
+
+# CDF2CIM Web API
+~/libs/esdoc-cdf2cim-ws/ops/logs/supervisord.log
+
+# Errata Web API
+~/libs/esdoc-errata-ws/ops/logs/supervisord.log
+
+# PYESSV Web API
+~/libs/pyessv-ws/ops/logs/supervisord.log
+
+# Documentation URL Rewriter
+~/rewriters/documentation/ops/logs/supervisord.log
+
+# Further Info URL Rewriter
+~/rewriters/further-info/ops/logs/supervisord.log
+
+# Specializations URL Rewriter
+~/rewriters/specializations/ops/logs/supervisord.log
+```
+
+### Opalstack Apps
+
+Logs related to Opalstack applications (setup from the Opalstack dashboard) are written to the following directory:
+
+```
+~/logs/apps/{application-id}
+```
+
+For example:
+
+```
+~/logs/apps/prod_fe_technical_1
+```
+
+**NOTE** - These log directories are normally empty as the supervisor process controller typically intercepts logging events.
+
+### Opalstack Sites
+
+For each application mapped to an Opalstack site, HTTP access & HTTP error logs are written to the following directory:
+
+```
+~/logs/sites/{application-id}/access.txt
+~/logs/sites/{application-id}/error.txt
+```
+
+For example:
+
+```
+~/logs/sites/prod_fe_technical_1/access.txt
+~/logs/sites/prod_fe_technical_1/error.txt
+```
+
+## Environment Settings
+
+3 types of file are used to assign environment specific settings.
+
+```
+- $HOME/.esdoc/environment
+    - activates sub-shells to streamline server administration from command line
+
+- $HOME/.esdoc/vars
+    - sets environment specific variables 
+
+- $HOME/.esdoc/credentials
+    - sets credentials for connecting to external services - typically GitHub
+```
+
