@@ -30,6 +30,9 @@ The file system layout upon each server is identical other than the environment 
     - contains canonical documents & vocabularies
     - each directory is mapped to a cloned GitHub repo
 
+- backups
+    - asset backup directories
+
 - devops
     - various scripts for manipulating server
 
@@ -73,6 +76,9 @@ The file system layout upon each server is identical other than the environment 
     - esdoc-archive
     - esdoc-cdf2cim-archive
     - pyeesv-archive
+
+- backups
+    - config
 
 - devops
     - opal
@@ -213,3 +219,6 @@ For example:
     - sets credentials for connecting to external services - typically GitHub
 ```
 
+## Backups
+
+Configuration files & databases are backed upto the `~/backups` folder.  Opalstack automatically backs up all databases.
