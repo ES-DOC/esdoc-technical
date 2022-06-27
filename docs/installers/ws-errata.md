@@ -1,4 +1,4 @@
-# Errata Web API Deployment
+# Errata Web API Installer
 
 ## Overview
 
