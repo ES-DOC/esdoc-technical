@@ -1,4 +1,4 @@
-# Errata Service Deployment
+# Errata Web API Deployment
 
 ## Overview
 
