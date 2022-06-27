@@ -2,7 +2,7 @@
 
 ## Overview
 
-The **ERRATA** service can be installed upon a machines in standalone mode.  The installation process is in several steps:
+The **ERRATA** web API can be installed upon a machines in standalone mode.  The installation process is in several steps:
 
 - Step 1: install system dependencies
 - Step 2: install pyenv
@@ -11,7 +11,7 @@ The **ERRATA** service can be installed upon a machines in standalone mode.  The
 - Step 5: install virtual environment
 - Step 6: install database
 
-Once the above steps have executed then the **ERRATA** web-service daemon can be launched: 
+Once the above steps have executed then the **ERRATA** web API daemon can be launched: 
 
 ```
 errata-ws-daemon

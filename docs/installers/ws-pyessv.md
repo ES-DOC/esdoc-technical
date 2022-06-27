@@ -2,7 +2,7 @@
 
 ## Overview
 
-The **PYESSV** web service can be installed upon a machine in standalone mode.  The installation process is in several steps:
+The **PYESSV** web API can be installed upon a machine in standalone mode.  The installation process is in several steps:
 
 - Step 1: install system dependencies
 - Step 2: install pyenv
@@ -10,7 +10,7 @@ The **PYESSV** web service can be installed upon a machine in standalone mode.  
 - Step 4: install stack
 - Step 5: install virtual environment
 
-Once the above steps have executed then the **PYESSV** web-service daemon can be launched: 
+Once the above steps have executed then the **PYESSV** web API daemon can be launched: 
 
 ```
 pyessv-ws-daemon
