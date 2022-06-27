@@ -38,6 +38,9 @@ nav:
     - Servers: "devops/servers.md"
     - Troubleshooting: "devops/troubleshooting.md"
 
+  - Installers:
+    - Errata: "installers/errata.md"
+
 site_name: ES-DOC Technical Documentation
 
 theme:
