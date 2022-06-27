@@ -40,8 +40,8 @@ nav:
 
   - Installers:
     - Web API:
-      - PYESSV: "installers/ws-pyessv.md"
       - Errata: "installers/ws-errata.md"
+      - PYESSV: "installers/ws-pyessv.md"
 
 site_name: ES-DOC Technical Documentation
 
