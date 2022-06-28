@@ -17,6 +17,21 @@ Once the above steps have executed then the **ERRATA** web API daemon can be lau
 errata-ws-daemon
 ```
 
+## Side Effects
+
+Once installed the web API files will be written to the file system as follows:
+
+```
+# Cloned repos.
+/opt/errata-fe
+/opt/errata-ws
+/opt/pyessv-archive
+
+# Environment + Credentials.
+/.esdoc/credentials
+/.esdoc/environment
+```
+
 ## Supported installers
 
 - [ubuntu 20.04](https://github.com/ES-DOC/devops/blob/main/setups/ubuntu/errata/workflow.md)

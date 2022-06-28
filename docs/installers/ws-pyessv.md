@@ -16,6 +16,23 @@ Once the above steps have executed then the **PYESSV** web API daemon can be lau
 pyessv-ws-daemon
 ```
 
+## Side Effects
+
+Once installed the web API files will be written to the file system as follows:
+
+```
+# Cloned repos.
+/opt/pyessv
+/opt/pyessv-archive
+/opt/pyessv-js
+/opt/pyessv-writers
+/opt/pyessv-ws
+
+# Environment + Credentials.
+/.esdoc/credentials
+/.esdoc/environment
+```
+
 ## Supported installers
 
 - [ubuntu 20.04](https://github.com/ES-DOC/devops/blob/main/setups/ubuntu/pyessv/workflow.md)
