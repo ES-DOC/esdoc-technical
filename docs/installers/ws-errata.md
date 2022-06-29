@@ -32,6 +32,11 @@ Once installed the web API files will be written to the file system as follows:
 /.esdoc/environment
 ```
 
+A new database will be created and initialised:
+
+- Db Name = **esdoc_errata**.
+- Db User = **esdoc**.
+
 ## Supported installers
 
 - [ubuntu 20.04](https://github.com/ES-DOC/devops/blob/main/setups/ubuntu/errata/workflow.md)
