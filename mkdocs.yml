@@ -39,7 +39,7 @@ nav:
       - Servers: "devops/servers.md"
       - Troubleshooting: "devops/troubleshooting.md"
     - Installers:
-      - Web API:
+      - Web APIs:
         - Errata: "installers/ws-errata.md"
         - PYESSV: "installers/ws-pyessv.md"
 
