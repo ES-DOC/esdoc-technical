@@ -1,10 +1,10 @@
-# CDF2CIM Web Service API
+# CDF2CIM Web API
 
 ## Overview
 
-The cdf2cim web-service exposes a set of endpoints for use by the [cdf2cim-client](https://github.com/ES-DOC/esdoc-cdf2cim).  In particular a data node administrator will use the cdf2cim-client to post JSON encoded climate simulation metadata extracted from scans of directories containing project specific NetCDF files.  
+The cdf2cim web API exposes a set of endpoints for use by the [cdf2cim-client](https://github.com/ES-DOC/esdoc-cdf2cim).  In particular a data node administrator will use the cdf2cim-client to post JSON encoded climate simulation metadata extracted from scans of directories containing project specific NetCDF files.  
 
-The cdf2cim-client maps each NetCDF file to a simplified JSON metadata file and calculates a unique identifier based upon a hash of it's contents.  If previously unpublished then the JSON metadata file is pushed to the cdf2cim web-service.  The web-service receives the incoming metadata and places it in the [cdf2cim-archive](https://github.com/ES-DOC/esdoc-cdf2cim-archive).
+The cdf2cim-client maps each NetCDF file to a simplified JSON metadata file and calculates a unique identifier based upon a hash of it's contents.  If previously unpublished then the JSON metadata file is pushed to the cdf2cim web API.  The web API receives the incoming metadata and places it in the [cdf2cim-archive](https://github.com/ES-DOC/esdoc-cdf2cim-archive).
 
 Once archived the cdf2cim metadata is indexed by the [cdf2cim-indexer](https://github.com/ES-DOC/esdoc-cdf2cim-indexer).  The indexer is essentially a distributed map reduce job the output of which is a set of CIM simulation documents.
 
@@ -21,7 +21,7 @@ Once archived the cdf2cim metadata is indexed by the [cdf2cim-indexer](https://g
 **https://cdf2cim.es-doc.org**
 
     - HTTP GET
-    - Returns web-service operational status
+    - Returns web API operational status
 
 **https://cdf2cim.es-doc.org/1/cmip5**
 
@@ -50,12 +50,12 @@ Once archived the cdf2cim metadata is indexed by the [cdf2cim-indexer](https://g
 
 ## Authorisation
 
-In order to use the cdf2cim web-service one must register GitHub user credentials with the ES-DOC support team - support@es-doc.org.
+In order to use the cdf2cim web API one must register GitHub user credentials with the ES-DOC support team - support@es-doc.org.
 
 
 ## Command Line Interface
 
-The web-service supports a command line interface to streamline operations.
+The web API supports a command line interface to streamline operations.
 
 ### Activation
 

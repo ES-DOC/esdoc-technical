@@ -1,8 +1,8 @@
-# Documentation Web Service API
+# Documentation Web API
 
 ## Overview
 
-The ES-DOC documentation web-service is built upon an indexed database of all CIM documents published to the ES-DOC archive.  It exposes documentation search & publication endpoints.
+The ES-DOC documentation web API is built upon an indexed database of all CIM documents published to the ES-DOC archive.  It exposes documentation search & publication endpoints.
 
 ## Pre-requisites
 
@@ -74,7 +74,7 @@ The indexation process scans all archived CIM documents and populates a simple P
 **https://api.es-doc.org**
 
     - HTTP GET
-    - Returns web-service operational status
+    - Returns web API operational status
 
 **https://api.es-doc.org/2/document/retrieve**
 
@@ -134,7 +134,7 @@ The indexation process scans all archived CIM documents and populates a simple P
 
 ## Command Line Interface
 
-The web-service supports a command line interface to streamline operations.
+The web API supports a command line interface to streamline operations.
 
 ### Activation
 

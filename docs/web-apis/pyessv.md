@@ -1,8 +1,8 @@
-# PYESSV Web Service API
+# PYESSV Web API
 
 ## Overview
 
-The pyessv web-service exposes a set of endpoints for exposing controlled vocabularies to upstream tools & applications.  It runs over the top of an in-momory cached instance of the pyessv-archive.  It serves vocabularies in JSON format on demand.
+The pyessv web API exposes a set of endpoints for exposing controlled vocabularies to upstream tools & applications.  It runs over the top of an in-momory cached instance of the pyessv-archive.  It serves vocabularies in JSON format on demand.
 
 ## Pre-requisites
 
@@ -17,7 +17,7 @@ The pyessv web-service exposes a set of endpoints for exposing controlled vocabu
 **https://pyessv.es-doc.org**
 
     - HTTP GET
-    - Returns web-service operational status
+    - Returns web API operational status
 
 **https://pyessv.es-doc.org/1/retrieve/{authority}/{scope}/{collection}/{term}**
 
@@ -43,7 +43,7 @@ The pyessv web-service exposes a set of endpoints for exposing controlled vocabu
 
 ## Command Line Interface
 
-The web-service supports a command line interface to streamline operations.
+The web API supports a command line interface to streamline operations.
 
 ### Activation
 
