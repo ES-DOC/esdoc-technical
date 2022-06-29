@@ -3,18 +3,18 @@ dev_addr: !ENV [ESDOC_TECH_DEV_ADDR, 127.0.0.1:8000]
 nav:
   - Home: "index.md"
 
-  - Schemas:
-    - CIM Ontology: "schemas/ontology.md"
-    - Specialisations: "schemas/specialisations.md"
+  - Archives:
+    - CDF2CIM: "archives/cdf2cim.md"
+    - Documentation: "archives/documentation.md"
+    - PYESSV: "archives/pyessv.md"
 
   - Libraries:
     - PYESSV: "libs/pyessv.md"
     - PYESDOC: "libs/pyesdoc.md"
 
-  - Archives:
-    - CDF2CIM: "archives/cdf2cim.md"
-    - Documentation: "archives/documentation.md"
-    - PYESSV: "archives/pyessv.md"
+  - Schemas:
+    - CIM Ontology: "schemas/ontology.md"
+    - Specialisations: "schemas/specialisations.md"
 
   - Web APIs:
     - CDF2CIM: "web-apis/cdf2cim.md"
@@ -35,13 +35,13 @@ nav:
     - CORDEX: "shells/cordex.md"
 
   - Dev Ops:
-    - Servers: "devops/servers.md"
-    - Troubleshooting: "devops/troubleshooting.md"
-
-  - Installers:
-    - Web API:
-      - Errata: "installers/ws-errata.md"
-      - PYESSV: "installers/ws-pyessv.md"
+    - OpalStack:
+      - Servers: "devops/servers.md"
+      - Troubleshooting: "devops/troubleshooting.md"
+    - Installers:
+      - Web API:
+        - Errata: "installers/ws-errata.md"
+        - PYESSV: "installers/ws-pyessv.md"
 
 site_name: ES-DOC Technical Documentation
 
