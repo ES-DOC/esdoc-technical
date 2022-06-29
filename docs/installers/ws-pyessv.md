@@ -35,4 +35,4 @@ Once installed the web API files will be written to the file system as follows:
 
 ## Supported installers
 
-- [ubuntu 20.04](https://github.com/ES-DOC/devops/blob/main/setups/ubuntu/pyessv/workflow.md)
+- [ubuntu 20.04](https://github.com/ES-DOC/devops/blob/main/installers/ubuntu/pyessv/workflow.md)

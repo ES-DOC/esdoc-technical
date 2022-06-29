@@ -39,4 +39,4 @@ A new database will be created and initialised:
 
 ## Supported installers
 
-- [ubuntu 20.04](https://github.com/ES-DOC/devops/blob/main/setups/ubuntu/errata/workflow.md)
+- [ubuntu 20.04](https://github.com/ES-DOC/devops/blob/main/installers/ubuntu/errata/workflow.md)
