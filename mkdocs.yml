@@ -29,7 +29,7 @@ nav:
     - Search: "front-ends/search.md"
     - Specialisations: "front-ends/specialisations.md"
 
-  - CLI Apps:
+  - CLI Applications:
     - Main: "shells/main.md"
     - CMIP6: "shells/cmip6.md"
     - CORDEX: "shells/cordex.md"
