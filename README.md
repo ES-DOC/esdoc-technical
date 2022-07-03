@@ -23,4 +23,6 @@ sudo ./sh/activate
 
 # Run mkdocs site.
 esdoc-technical
+
+# Open browser -> https://localhost:8000
 ```
