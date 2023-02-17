@@ -93,7 +93,7 @@ A developer can directly integrate the library into their web-page.  Once integr
 - [https://github.com/ES-DOC/pyessv](https://github.com/ES-DOC/pyessv)
 - [https://github.com/ES-DOC/pyessv-archive](https://github.com/ES-DOC/pyessv-archive)
 - [https://github.com/ES-DOC/pyessv-config](https://github.com/ES-DOC/pyessv-config)
-- [https://github.com/ES-DOC/pyessv-ws](https://github.com/ES-DOC/pyessv-docs)
+- [https://github.com/ES-DOC/pyessv-docs](https://github.com/ES-DOC/pyessv-docs)
 - [https://github.com/ES-DOC/pyessv-js](https://github.com/ES-DOC/pyessv-js)
 - [https://github.com/ES-DOC/pyessv-writers](https://github.com/ES-DOC/pyessv-writers)
 - [https://github.com/ES-DOC/pyessv-ws](https://github.com/ES-DOC/pyessv-ws)
