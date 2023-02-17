@@ -54,7 +54,7 @@ Whilst all vocabularies are published to the pyessv archive, a web-service API a
 
 Current status of the web-service:
 
-- https://pyessv.es-doc.org/status
+- [https://pyessv.es-doc.org/status](https://pyessv.es-doc.org/status)
 
 **Vocabulary Retrieval**
 
@@ -62,25 +62,25 @@ The vocabularies can be retrieved according to the following url pattern:
 
 - https://pyessv.es-doc.org/1/retrieve/{authority}/[{scope}]/[{collection}]/[{term}]
 
-For example, to download all WCRP CMIP6 vocabulary scope:
+For example, to download all WCRP vocabulary collections within CMIP6 scope:
 
-- https://pyessv.es-doc.org/1/retrieve/wcrp/cmip6
+- [https://pyessv.es-doc.org/1/retrieve/wcrp/cmip6](https://pyessv.es-doc.org/1/retrieve/wcrp/cmip6)
 
 For example, to download ES-DOC errata severity vocabulary collection:
 
-- https://pyessv.es-doc.org/1/retrieve/esdoc/errata/severity
+- [https://pyessv.es-doc.org/1/retrieve/esdoc/errata/severity](https://pyessv.es-doc.org/1/retrieve/esdoc/errata/severity)
 
-For example, to download Copernicus CORDEX knmi-racmo22e RCM model vocabulary term:
+For example, to download Copernicus CORDEX-P knmi-racmo22e RCM model vocabulary term:
 
-- https://pyessv.es-doc.org/1/retrieve/copernicus/cordex/rcm-model/knmi-racmo22e
+- [https://pyessv.es-doc.org/1/retrieve/copernicus/cordexp/rcm-model/knmi-racmo22e](https://pyessv.es-doc.org/1/retrieve/copernicus/cordexp/rcm-model/knmi-racmo22e)
 
 **Identifier Validation**
 
 Some projects leveraging pyessv rely upon identifiers based upon patterns of vocabulary terms.  Such identifiers require validation and pyessv thus exposes identifier validation endpoints:
 
-- https://pyessv.es-doc.org/1/validate-identifier
+- [https://pyessv.es-doc.org/1/validate-identifier](https://pyessv.es-doc.org/1/validate-identifier)
 
-- https://pyessv.es-doc.org/1/validate-identifier-set
+- [https://pyessv.es-doc.org/1/validate-identifier-set](https://pyessv.es-doc.org/1/validate-identifier-set)
 
 ## Javascript
 
@@ -90,13 +90,13 @@ A developer can directly integrate the library into their web-page.  Once integr
 
 ## GitHub Repositories
 
-- https://github.com/ES-DOC/pyessv
-- https://github.com/ES-DOC/pyessv-archive
-- https://github.com/ES-DOC/pyessv-js
-- https://github.com/ES-DOC/pyessv-writers
-- https://github.com/ES-DOC/pyessv-ws
+- [https://github.com/ES-DOC/pyessv](https://github.com/ES-DOC/pyessv)
+- [https://github.com/ES-DOC/pyessv-archive](https://github.com/ES-DOC/pyessv-archive)
+- [https://github.com/ES-DOC/pyessv-js](https://github.com/ES-DOC/pyessv-js)
+- [https://github.com/ES-DOC/pyessv-writers](https://github.com/ES-DOC/pyessv-writers)
+- [https://github.com/ES-DOC/pyessv-ws](https://github.com/ES-DOC/pyessv-ws)
 
 ## Further Info
 
-- https://github.com/ES-DOC/esdoc-docs/outreach/presentations/2018-esgf-f2f/ESGF-F2F-2018-PYESSV.pdf
+- [https://github.com/ES-DOC/esdoc-docs/outreach/presentations/2018-esgf-f2f/ESGF-F2F-2018-PYESSV.pdf](https://github.com/ES-DOC/esdoc-docs/outreach/presentations/2018-esgf-f2f/ESGF-F2F-2018-PYESSV.pdf)
 
