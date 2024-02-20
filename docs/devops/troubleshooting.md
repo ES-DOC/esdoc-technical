@@ -30,15 +30,15 @@ errata-ws-daemon-status
 pyessv-ws-daemon-status
 
 # Documentation URL Rewriter
-. ~/rewriters/rewriter-doc/sh/activate
+. ~/rewriters/documentation/sh/activate
 rewriter-ws-daemon-status
 
 # Further Info URL Rewriter
-. ~/rewriters/rewriter-fi/sh/activate
+. ~/rewriters/further-info/sh/activate
 rewriter-ws-daemon-status
 
 # Specializations URL Rewriter
-. ~/rewriters/rewriter-specs/sh/activate
+. ~/rewriters/specializations/sh/activate
 rewriter-ws-daemon-status
 ```
 
@@ -60,15 +60,15 @@ errata-ws-daemon-reload
 pyessv-ws-daemon-reload
 
 # Documentation URL Rewriter
-. ~/rewriters/rewriter-doc/sh/activate
+. ~/rewriters/documentation/sh/activate
 rewriter-ws-daemon-reload
 
 # Further Info URL Rewriter
-. ~/rewriters/rewriter-fi/sh/activate
+. ~/rewriters/further-info/sh/activate
 rewriter-ws-daemon-reload
 
 # Specializations URL Rewriter
-. ~/rewriters/rewriter-specs/sh/activate
+. ~/rewriters/specializations/sh/activate
 rewriter-ws-daemon-reload
 ```
 
