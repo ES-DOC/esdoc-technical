@@ -5,12 +5,12 @@ Micro-site encapsulating documentation of ES-DOC technical eco-system.
 ## Installation
 
 ```
-# Ensure python 3 dependencies have been installed.
+# Ensure Python 3 dependencies have been installed.
 python3 -m pip install --upgrade mkdocs
 python3 -m pip install --upgrade mkdocs-material
 
 # Clone repo into working directory.
-cd YOUR_WORKING-DIRECTORY
+cd YOUR_WORKING_DIRECTORY
 git clone https://github.com/ES-DOC/esdoc-technical.git
 ```
 
@@ -18,7 +18,7 @@ git clone https://github.com/ES-DOC/esdoc-technical.git
 
 ```
 # Activate shell commands.
-cd YOUR_WORKING-DIRECTORY/esdoc-technical
+cd YOUR_WORKING_DIRECTORY/esdoc-technical
 chmod a+x sh/activate
 sudo ./sh/activate
 
