@@ -4,6 +4,7 @@
 
 # Set home path
 export ESDOC_TECH_HOME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+export ESDOC_TECH_HOME="$( cd "$( dirname "${ESDOC_TECH_HOME[0]}" )" && pwd )"
 
 # Ensure shell scripts are executable.
 chmod a+x $ESDOC_TECH_HOME/sh/*.sh
