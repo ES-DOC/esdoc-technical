@@ -19,6 +19,7 @@ git clone https://github.com/ES-DOC/esdoc-technical.git
 ```
 # Activate shell commands.
 cd YOUR_WORKING-DIRECTORY/esdoc-technical
+chmod a+x sh/activate
 sudo ./sh/activate
 
 # Run mkdocs site.
