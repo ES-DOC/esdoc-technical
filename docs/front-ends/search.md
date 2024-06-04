@@ -2,7 +2,7 @@
 
 ## Overview
 
-Archived CIM documents are indexed into a PostgreSQL database and can be retrieved via a web-service.  The documentation serah application pulls documentation summary data from the web-service and renders it to the user.  The user can then browse search results and open documents of interest in a viewer. 
+Archived CIM documents are indexed into a PostgreSQL database and can be retrieved via a web-service.  The documentation search application pulls documentation summary data from the web-service and renders it to the user.  The user can then browse search results and open documents of interest in a viewer.
 
 ## Frameworks
 
