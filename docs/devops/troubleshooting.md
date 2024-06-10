@@ -107,15 +107,15 @@ vi ~/libs/pyessv-ws/ops/config/supervisord.conf
 vi ~/libs/pyessv-ws/ops/config/ws.conf
 
 # Documentation URL Rewriter
-vi ~/rewriters/documentation/ops/config/pyesdoc.conf
+vi ~/rewriters/documentation/ops/config/ws.conf
 vi ~/rewriters/documentation/ops/config/supervisord.conf
 
 # Further Info URL Rewriter
-vi ~/rewriters/further-info/ops/config/pyesdoc.conf
+vi ~/rewriters/further-info/ops/config/ws.conf
 vi ~/rewriters/further-info/ops/config/supervisord.conf
 
 # Specializations URL Rewriter
-vi ~/rewriters/specializations/ops/config/pyesdoc.conf
+vi ~/rewriters/specializations/ops/config/ws.conf
 vi ~/rewriters/specializations/ops/config/supervisord.conf
 ```
 
